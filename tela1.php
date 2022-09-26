@@ -10,6 +10,10 @@
         <img src="" alt="">
         <div >
             <?php
+            if ($_POST == []){
+                echo '<h1> Faça o login primeiro</h1>';
+            }
+            else{
             $usuario = $_POST['Login'];
             $senha = $_POST['senha'];
             if ($usuario == "etec" && $senha == "etec"){
@@ -28,6 +32,7 @@
             }
             else if ($senha <> "etec"){
                 echo "senha incorreta";
+            }
             }
             ?>
             
