@@ -23,7 +23,10 @@
                 <input type="submit" value="enviar">
             </form> ';
             }
-            else {
+            else if($usuario <> "etec"){
+                echo  "login incorreto";
+            }
+            else if ($senha <> "etec"){
                 echo "senha incorreta";
             }
             ?>

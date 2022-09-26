@@ -32,7 +32,7 @@
             
         }
         else if($titulo <> "" || $corpo <> "" || $autor <> "") {
-            echo '<img src="../iamgem/imagem1.png" alt="" height="200px" width="550px" >';
+            echo '<img src="./imagem1.png" alt="" height="200px" width="550px" >';
             echo '<p>'.'Titulo: '. $titulo.'</p>'. '<br>';
             echo '<p>'.'Conteudo: '.$corpo.'</p>'. '<br>';
             echo '<p>'.'Autor: '.$autor.'</p>';
