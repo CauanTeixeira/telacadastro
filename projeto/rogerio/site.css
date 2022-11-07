@@ -1,0 +1,44 @@
+body {
+    background-color:rgb(250, 200, 1);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    /* background-image: url("../imagem/WhatsApp\ Image\ 2022-09-16\ at\ 17.19.48.jpeg"); */
+    overflow-y: scroll;
+    text-align: center;
+}
+img {
+    border-radius: 100px,100px,100px,100px;
+    ;
+}
+div {
+    background-image: url("../imagem/ilustracao-em-vetor-sem-costura-padrao-de-fundo-quadriculado-preto-e-branco_136875-3299.png ");
+    width: auto;
+    height: 45px;
+    background-color: black;
+    /* padding: 5px; */
+    /* display: block; */
+    /* position: relative; */
+    /* top: -10px;
+    left: -10px; */
+    text-align: center;
+}
+main.logo{
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+h1 {
+    font: 20pt Arial;
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+}
+h4{
+    color: white;
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+}
