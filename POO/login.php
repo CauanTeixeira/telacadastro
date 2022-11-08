@@ -4,7 +4,7 @@ require_once 'control.php';
 require_once 'session.php';
 $session = new Session();
 $post = new Post();
-if ($post->get('User') != ''&& $post->get('pass') != ''){
+if ($post->get('User') <> ''&& $post->get('pass') <> ''){
     $login = $post->get('User');
     $pass = $post->get('pass');
     foreach ($control as $index => $value) {
@@ -15,7 +15,7 @@ if ($post->get('User') != ''&& $post->get('pass') != ''){
             break;
         }
     } 
-}else if ($session->get('email')<> ''){
+}else if ($session->get('email')<> ''&& $session->get('pass')<>''){
     foreach ($control as $index => $value) {
         if ($session->get('email') == $value['User'] && $session->get('pass') == $value['pass']) {
         require_once 'pagina1.php';
@@ -23,7 +23,7 @@ if ($post->get('User') != ''&& $post->get('pass') != ''){
         }
     }
 }
-else {
+else{
     echo '<p><a href="index.html">Faça o login</a></p>';
 }
 

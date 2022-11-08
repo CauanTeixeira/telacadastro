@@ -7,17 +7,17 @@
     <title>pagina 1 </title>
 </head>
 <body>
-    <p>Email:</p>
-    <p>Nome:</p>
-    <p>CPF:</p> <br><br>
-    <h2>Insera os numeros da equação de 2 grau:</h2>
-    <form action="pagina2.php" method="get">
-        <label>Valor de A:</label><br>
+    <h1>informações do usuario</h1>
+    <img src="<?=$value['img']?>">
+    <p>Email: <?=$value['User'] ?></p>
+    <p>Nome:<?=$value['name'] ?></p>
+    <p>CPF:<?=$value['cpf'] ?></p> <br><br>
+    <h2>insira os numeros que deseja saber a:</h2>
+    <form action="validacao.php" method="get">
+        <label>raiz quadrada:</label><br>
         <input type="number" name="A" id=""><br>
-        <label>Valor de B:</label><br>
+        <label>Poteciação:</label><br>
         <input type="number" name="B" id=""><br>
-        <label>Valor de C:</label><br>
-        <input type="number" name="C" id=""><br>
         <button type="submit">Calcular</button>
     </form>
 </body>
